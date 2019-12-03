@@ -1,22 +1,85 @@
-.App {
-  text-align: center;
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: rgba(220, 220, 220, 0.4);
 }
 
-.App-logo {
-  height: 40vmin;
+canvas {
+    display: block;
+    /* vertical-align: bottom; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img {
+    /* display: none; */
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 170px;
 }
 
-.App-link {
-  color: #09d3ac;
+#heading {
+    color: white;
+    margin: 2% 0;
+    font-size: 3rem;
+    -webkit-animation: .5s .25s fade backwards ease-out;
+    animation: .5s .25s fade backwards ease-out
+}
+
+.container {
+    /* position: relative; */
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -13%;
+}
+
+.card {
+    display: inline-block;
+    width: 31%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+
+.card-text {
+    width: 90%;
+}
+
+.card-hide {
+    display: none;
+}
+
+
+/* ---- particles.js container ---- */
+
+.particles-js-container {
+    height: 50%;
+}
+
+.particles-js {
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #1CB5E0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000046, #1CB5E0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+canvas {
+    z-index: -10;
 }
