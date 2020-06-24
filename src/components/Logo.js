@@ -17,7 +17,7 @@ export const Logo = () => {
     }, [colors]);
 
     return (
-        <ul id="logo">
+        <motion.ul id="logo" drag>
             {colors.map(background => (
                 <motion.li
                     key={background}
@@ -25,7 +25,7 @@ export const Logo = () => {
                     style={{ background }}
                 />
             ))}
-        </ul>
+        </motion.ul>
     );
 };
 export default Logo

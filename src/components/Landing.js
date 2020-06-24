@@ -11,7 +11,7 @@ function Landing() {
                         <div style={{ fontSize: "6rem", fontWeight: 500, color: "black" }}>Joshua Noronha.</div>
                         <div style={{ fontSize: "3.5rem", fontWeight: 500, marginTop: "0.4em", color: "rgb(110,110,110)" }}>I am a Full Stack Developer.</div>
                         <div style={{ fontSize: "1.2rem", fontWeight: 400, marginTop: "1em", color: "rgb(110,110,110)" }}>
-                            I'm a software engineer based in Boston, MA specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+                            I'm a software engineer based in Mumbai specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
                         </div>
                     </div>
                     <Button variant="outline-primary">
