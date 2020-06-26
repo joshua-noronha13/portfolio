@@ -1,0 +1,11 @@
+#sidenav{
+    position: fixed;
+    top: 0;
+    width: 3.5em;
+    height: 100vh;
+    text-align: center;
+}
+
+#icon-container{
+    margin-top: 70vh;
+}

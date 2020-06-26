@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { shuffle } from "lodash";
+import "./logo.css"
 
 const spring = {
     type: "spring",
@@ -19,7 +20,8 @@ export const Logo = () => {
     return (
         <motion.ul id="logo" drag>
             {colors.map(background => (
-                <motion.li
+                <motion.li 
+                    id="logo-item"
                     key={background}
                     layoutTransition={spring}
                     style={{ background }}
