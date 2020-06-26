@@ -1,0 +1,22 @@
+#logo, #logo-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    flex-wrap: wrap;
+}
+
+#logo-item {
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    width: 15px;
+    height: 15px;
+}
