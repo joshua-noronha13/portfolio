@@ -1,0 +1,17 @@
+#navbar {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+#brand {
+    display: none;
+}
+
+@media (max-width: 992px) {     
+    #brand {
+        display: inline;
+    }     
+    #navbar {
+        padding-left: 1em;
+        padding-right: 1em;
+    }      
+}

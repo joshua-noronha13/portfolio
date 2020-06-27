@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "./Card"
-import { Overlay, OverlayText } from "./Overlay"
 import { motion } from "framer-motion"
 
 import { Container,Row } from "react-bootstrap";
