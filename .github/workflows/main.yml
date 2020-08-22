@@ -1,4 +1,4 @@
-name: CI
+name: Deploy Code
 on:
   push:
     branches: [ master ]
@@ -17,8 +17,13 @@ jobs:
         node-version: '10.x'
     - name: Run npm install
       run: npm install
-
-    - name: Deploy code on gh-pages
+    - name: Build Code
       run: |
-        echo Deploying code on gh-pages,
-        npm run-script deploy
+        echo Building code,
+        npm run-script build
+    - name: Deploy 🚀 
+      uses: JamesIves/github-pages-deploy-action@3.5.9
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages 
+        FOLDER: build 
