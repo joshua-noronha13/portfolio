@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { motion } from "framer-motion"
 import PrimaryButton from "../BasicComponents/PrimaryButton"
 import "./landing.css"
@@ -35,20 +35,18 @@ function Landing() {
         }
     }
     return (
-        <Container id="landing-container">
-            <Row>
-                <Col>
-                    <motion.div variants={variant} initial="initial" animate="animate">
-                        <motion.div id="preface" variants={variant}>Hi, my name is</motion.div>
-                        <motion.div id="title" variants={titleVariant} initial="initial" animate="animate">Joshua Noronha.</motion.div>
-                        <motion.div id="subtitle" variants={variant}>I am a Full Stack Developer.</motion.div>
-                        <motion.div id="title-text" variants={variant}>
-                            I'm a software engineer based in Mumbai specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+        <Container id="landing-container" fluid="md">
+            <motion.div variants={variant} initial="initial" animate="animate">
+                <motion.div id="preface" variants={variant}>Hi, my name is</motion.div>
+                <motion.div id="title" variants={titleVariant} initial="initial" animate="animate">Joshua Noronha.</motion.div>
+                <motion.div id="subtitle" variants={variant}>I am a Full Stack Developer.</motion.div>
+                <motion.div id="title-text" variants={variant}>
+                    I'm a software engineer specializing in making enterprise level websites and backends 
                         </motion.div>
-                    </motion.div>
+                <motion.span variants={variant}>
                     <PrimaryButton text="See Projects!" />
-                </Col>
-            </Row>
+                </motion.span>
+            </motion.div>
         </Container>
     )
 }
