@@ -9,15 +9,15 @@ export default function SideBar() {
                 <Logo />
                 <div id="icon-container">
                 <Icon
-                    url="https://www.linkedin.com/in/joshua-noronha-937330148/"
+                    url="https://www.linkedin.com/in/joshua-noronha/"
                     iconType="fa-linkedin"
                 />
                 <Icon
-                    url="https://github.com/joshua-noronha13/"
+                    url="https://github.com/joshuanoronha/"
                     iconType="fa-envelope-o"
                 />
                 <Icon
-                    url="https://github.com/joshua-noronha13/"
+                    url="https://github.com/joshuanoronha/"
                     iconType="fa-github"
                 />
                 </div>

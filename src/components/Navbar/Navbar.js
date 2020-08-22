@@ -8,16 +8,13 @@ export default function MainNavbar() {
     const variant = {
         initial: {
             opacity: 0,
-            y : -100
         },
         animate: {
             opacity: 1,
-            y  : 20,
             transition: {
                 type: 'spring',
                 staggerChildren: 0.2,
-                delay: 2,
-                duration: 4
+                delay: 0.7
             }
         }
     }
@@ -29,7 +26,7 @@ export default function MainNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                         <Nav.Link href="#home" id="home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="#link">About</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

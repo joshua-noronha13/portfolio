@@ -1,6 +1,10 @@
 #navbar {
     padding-left: 5em;
     padding-right: 5em;
+    color: var(--secondary);
+}
+.nav-link {
+    color: var(--secondary);
 }
 #brand {
     display: none;
@@ -11,7 +15,7 @@
         display: inline;
     }     
     #navbar {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
     }      
 }
