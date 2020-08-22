@@ -45,9 +45,13 @@ img {
 .card-hide {
     display: none;
 }*/
-
 :root {
     --primary: black;
     --secondary: rgb(110,110,110);
     --subsecondary: rgb(136, 146, 176);
+    --background: white;
+}
+
+div {
+    background-color: var(--background);
 }

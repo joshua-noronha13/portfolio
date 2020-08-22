@@ -7,9 +7,10 @@ import MainNavbar from "./components/Navbar/Navbar"
 import { Container, Card, Button, Row, Col } from "react-bootstrap"
 
 function App() {
+  
   return (
     <div>
-      <MainNavbar />
+      <MainNavbar/>
       <Landing />
       <SideBar />
       <Container>

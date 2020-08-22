@@ -2,6 +2,8 @@
     padding: 2%;
     margin:4% auto;
     margin-top:4em;
+    margin-bottom: 5em;
+    height: max-content;
 }
 
 #preface {
@@ -31,9 +33,9 @@
 
 @media (max-width: 992px) { 
     #landing-container{
-        padding: 2%;
+        padding: 1em;
         margin:0 auto;
-        margin-top:2em;
+        margin-top:1em;
     }
 
     #preface {
