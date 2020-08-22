@@ -2,11 +2,10 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { motion } from "framer-motion"
 import Logo from "../Logo/Logo"
-import Toggle from "./Toggle"
+// import Toggle from "./Toggle"
 import "./navbar.css"
 
 export default function MainNavbar() {
-    let darkMode = false;
     const variant = {
         initial: {
             opacity: 0,
