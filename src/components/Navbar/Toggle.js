@@ -20,9 +20,11 @@ export default function Toggle(props) {
         dark = !dark;
         const root = document.querySelector(':root');
         if (dark) {
-            root.style.setProperty('--background', '#232323');
+            root.style.setProperty('--background', 'black');
+            root.style.setProperty('--fontColor', 'white');
         } else {
             root.style.setProperty('--background', 'white');
+            root.style.setProperty('--fontColor', '#232323');
         }
     }
 }

@@ -50,8 +50,12 @@ img {
     --secondary: rgb(110,110,110);
     --subsecondary: rgb(136, 146, 176);
     --background: white;
+    --fontColor: #232323;
 }
-
+body {
+    color: var(--fontColor)
+}
 div {
     background-color: var(--background);
+    color: var(--fontColor)
 }

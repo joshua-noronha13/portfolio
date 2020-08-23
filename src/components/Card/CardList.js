@@ -2,12 +2,10 @@ import React from "react";
 import { Card } from "./Card"
 import { motion } from "framer-motion"
 
-import { Container,Row } from "react-bootstrap";
-
-export function CardList() {
+export default function CardList() {
     const projects = [{
         name: "Smart Street Lamps",
-        imageSrc: "../img/smart_street_lamp.png"
+        imageSrc: "../img/smart_street_lamp.png",
     }, {
         name: "Camping Grounds",
         imageSrc: "../img/smart_street_lamp.png"
@@ -29,22 +27,22 @@ export function CardList() {
     const childVariants = {
         hidden: {
             opacity: 0,
+            x: -100,
         },
         visible: {
             opacity: 1,
+            x: 0
         }
     }
     return (
         <motion.div className="container" variants={cardContainerVariants} initial="hidden" animate="visible">
-            <Container fluid>
-                <Row>
-                    {projects.map(project => {
+            {/* <Container fluid> */}
+                    {projects.map((project, index )=> {
                         return (
-                            <Card project={project} childVariants={childVariants} />
+                            <Card project={project} childVariants={childVariants} key={index}/>
                         )
                     })}
-                </Row>
-            </Container>
+            {/* </Container> */}
         </motion.div>
     )
 }

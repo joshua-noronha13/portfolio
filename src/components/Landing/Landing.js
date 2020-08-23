@@ -23,12 +23,12 @@ function Landing() {
     }
     const titleVariant = {
         animate: {
-            color: ["rgb(0,0,0)", "rgb(0,0,255)", "rgb(0,255,0)", "rgb(255,0,0)", "rgb(0,0,0)"],
+            color: ["#e91e63", "#03a9f4", "#4a148c"],
             transition: {
                 type: 'spring',
                 color: {
-                    yoyo: "infinity",
-                    duration: 10
+                    yoyo: Infinity,
+                    duration: 5
                 },
                 delay: 0.9,
             }
