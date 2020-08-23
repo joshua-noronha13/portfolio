@@ -1,4 +1,4 @@
-name: Deploy Code
+name: Build Code without Errors
 on:
   pull_request:
     branches: [ master ]

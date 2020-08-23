@@ -6,6 +6,7 @@ import Logo from "../Logo/Logo"
 import "./navbar.css"
 
 export default function MainNavbar() {
+    // let darkMode = false
     const variant = {
         initial: {
             opacity: 0,

@@ -6,7 +6,7 @@ export default function Icon(props) {
     return (
         <div>
             <a href={url} target="_blank" rel="noopener noreferrer">
-                <i class={`fa ${iconType}`} aria-hidden="true" style={{ padding: "10px", color:"rgb(33, 37, 41)" }}/>
+                <i class={`fa ${iconType}`} aria-hidden="true" style={{ padding: "10px", color: "var(--fontColor)" }}/>
             </a>
         </div>
     )
