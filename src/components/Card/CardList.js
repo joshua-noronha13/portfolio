@@ -10,7 +10,7 @@ export default function CardList() {
         description: `Made a Smart Street Lamp with features like LED dimming, 
         Number plate tracking using Camera and Pollution Detection using a Raspi 
         and Arduino`,
-        tags : ['Lua','IOT','MQTT']
+        tags : ['Pytorch','Arduino','Raspi','MQTT','Tesseract']
     }, {
         name: "Smartwatch",
         image: "watch",
@@ -52,13 +52,11 @@ export default function CardList() {
     return (
         <motion.div className="container" variants={cardContainerVariants} initial="hidden" animate="visible">
             <h2 style={{color:"var(--secondary)"}}>A Few of my Projects</h2>
-            {/* <Container fluid> */}
                     {projects.map((project, index )=> {
                         return (
                             <Card project={project} childVariants={childVariants} key={index}/>
                         )
                     })}
-            {/* </Container> */}
         </motion.div>
     )
 }

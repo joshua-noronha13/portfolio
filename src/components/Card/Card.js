@@ -34,7 +34,7 @@ export function Card(props) {
             <div style={{ fontSize: "0.9rem", margin: "10px", color: "var(--secondary)" }}>{props.project.description}</div>
             <div style={{margin: "10px", fontSize: "0.95rem", color: "var(--subsecondary)"}}>
               {props.project.tags ? props.project.tags.map(tag => {
-              return <span>{tag} </span>
+              return <span>{`${tag}\t`}</span>
             }) : <span></span>}
             </div>
           </span>
