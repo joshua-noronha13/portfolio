@@ -5,13 +5,28 @@ import { motion } from "framer-motion"
 export default function CardList() {
     const projects = [{
         name: "Smart Street Lamps",
-        imageSrc: "../img/smart_street_lamp.png",
+        image: "emoji_objects",
+        color: "#FFEB3B",
+        description: `Made a Smart Street Lamp with features like LED dimming, 
+        Number plate tracking using Camera and Pollution Detection using a Raspi 
+        and Arduino`,
+        tags : ['Pytorch','Arduino','Raspi','MQTT','Tesseract']
     }, {
-        name: "Camping Grounds",
-        imageSrc: "../img/smart_street_lamp.png"
+        name: "Smartwatch",
+        image: "watch",
+        color: "#039BE5",
+        description: 
+        `Worked on making a Smartwatch using a NodeMCU, LED display, heartbeat sensor 
+        and a 3D printed case for a research project on Smartwatches for Senior Citizens`,
+        tags : ['Lua','IOT','MQTT']
     }, {
-        name: "Maps",
-        imageSrc: "../img/smart_street_lamp.png"
+        name: "Portfolio Website",
+        image: "web_asset",
+        color: "#7CB342",
+        description: `Made a website for displaying projects and for information about 
+        my resume and my github page. Hosting the website on Github Pages with deployment 
+        via Github Actions`,
+        tags : ['React', 'Bootstrap', 'Devops']
     }]
     const cardContainerVariants = {
         hidden: {
@@ -36,13 +51,12 @@ export default function CardList() {
     }
     return (
         <motion.div className="container" variants={cardContainerVariants} initial="hidden" animate="visible">
-            {/* <Container fluid> */}
+            <h2 style={{color:"var(--secondary)"}}>A Few of my Projects</h2>
                     {projects.map((project, index )=> {
                         return (
                             <Card project={project} childVariants={childVariants} key={index}/>
                         )
                     })}
-            {/* </Container> */}
         </motion.div>
     )
 }

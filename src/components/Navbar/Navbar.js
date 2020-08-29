@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { motion } from "framer-motion"
 import Logo from "../Logo/Logo"
+import { Link } from "react-router-dom";
+
 // import Toggle from "./Toggle"
 import "./navbar.css"
 
@@ -30,8 +32,20 @@ export default function MainNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="#home" id="home">Home</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
+                        <Nav id="home" className="nav-link">
+                            <Link to="/">
+                                <span style={{ color: "var(--secondary)" }}>
+                                    Home
+                                    </span>
+                            </Link>
+                        </Nav>
+                        {/* <Nav id="about" className="nav-link">
+                            <Link to="/about">
+                                <span style={{ color: "var(--secondary)" }}>
+                                    About
+                                </span>
+                            </Link>
+                        </Nav> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

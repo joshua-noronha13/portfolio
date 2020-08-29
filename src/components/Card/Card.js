@@ -11,6 +11,7 @@ const CardStyle = styled.div`
     height: 250px;
     max-width: 100%;
     border-radius: 10px;
+    margin-top: 30px;
     /* transition: all 0.5s ease-in-out;
     color: palevioletred;
     &:hover $c{Overlay} {
@@ -20,14 +21,22 @@ const CardStyle = styled.div`
 
 export function Card(props) {
   return (
-    <Col sm="12" md="6" lg="4" style={{display:'inline-block'}}>
+    <Col sm="12" md="6" lg="4" style={{ display: 'inline-block' }}>
       <motion.span variants={props.childVariants}>
         <CardStyle>
           <span>
-            <span className="card-image">
-              <img src={props.project.imageSrc} alt={props.project.name}/>
-            </span>
-            <span className="card-text">{props.project.name}</span>
+            <div>
+              <span class="material-icons" style={{ fontSize: "3rem", paddingTop: "10px", color: props.project.color }}>
+                {props.project.image}
+              </span>
+            </div>
+            <span style={{ color: "black", marginLeft: "10px" }}>{props.project.name}</span>
+            <div style={{ fontSize: "0.9rem", margin: "10px", color: "var(--secondary)" }}>{props.project.description}</div>
+            <div style={{margin: "10px", fontSize: "0.95rem", color: "var(--subsecondary)"}}>
+              {props.project.tags ? props.project.tags.map(tag => {
+              return <span>{`${tag}\t`}</span>
+            }) : <span></span>}
+            </div>
           </span>
           {/* <Overlay><OverlayText>View More</OverlayText></Overlay> */}
         </CardStyle>
