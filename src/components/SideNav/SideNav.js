@@ -3,6 +3,7 @@ import Logo from "../Logo/Logo"
 import Icon from "./Icon"
 import { motion } from "framer-motion"
 import "./sidenav.css"
+
 export default function SideBar() {
     return (
         <>
