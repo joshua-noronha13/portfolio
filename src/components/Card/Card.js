@@ -26,16 +26,16 @@ export function Card(props) {
         <CardStyle>
           <span>
             <div>
-              <span class="material-icons" style={{ fontSize: "3rem", paddingTop: "10px", color: props.project.color }}>
+              <span className="material-icons" style={{ fontSize: "3rem", paddingTop: "10px", color: props.project.color }}>
                 {props.project.image}
               </span>
             </div>
             <span style={{ color: "black", marginLeft: "10px" }}>{props.project.name}</span>
             <div style={{ fontSize: "0.9rem", margin: "10px", color: "var(--secondary)" }}>{props.project.description}</div>
-            <div style={{margin: "10px", fontSize: "0.95rem", color: "var(--subsecondary)"}}>
-              {props.project.tags ? props.project.tags.map(tag => {
-              return <span>{`${tag}\t`}</span>
-            }) : <span></span>}
+            <div style={{ margin: "10px", fontSize: "0.95rem", color: "var(--subsecondary)" }}>
+              {props.project.tags ? props.project.tags.map((tag, index) => {
+                return <span key={index}>{`${tag}\t`}</span>
+              }) : <span></span>}
             </div>
           </span>
           {/* <Overlay><OverlayText>View More</OverlayText></Overlay> */}

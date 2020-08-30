@@ -1,60 +1,15 @@
-/* ---- reset ---- */
-/*
-body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #f5f5f5;
-}
-
-canvas {
-    display: block;
-     vertical-align: bottom; 
-}
-
-.random {
-    position: absolute;
-    top: 50vh;
-    right: 50vw;
-    font-size: 4rem;
-    color: white;
-}
-
-img {
-    display: none;
-    border-radius: 10px 10px 0px 0px;
-    max-width: 100%;
-    max-height: 200px;
-    padding: 2%;
-    width: auto;
-    height: auto;
-}
-
-#heading {
-    color: white;
-    margin: 2% 0;
-    font-size: 3rem;
-    -webkit-animation: 0.5s 0.25s fade backwards ease-out;
-    animation: 0.5s 0.25s fade backwards ease-out;
-}
-
-.card-text {
-    width: 90%;
-}
-
-.card-hide {
-    display: none;
-}*/
 :root {
     --primary: black;
-    --secondary: rgb(110,110,110);
+    --secondary: rgb(110, 110, 110);
     --subsecondary: rgb(136, 146, 176);
     --background: white;
     --fontColor: #232323;
 }
+
 body {
     color: var(--fontColor)
 }
+
 div {
     /* background-color: var(--background); */
     color: var(--fontColor)
