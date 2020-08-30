@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../Logo/Logo"
-import Icon from "./Icon"
+import Icon from "../BasicComponents/Icon"
 import { motion } from "framer-motion"
 import "./sidenav.css"
 

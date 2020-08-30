@@ -1,8 +1,8 @@
 #landing-container{
     padding: 2%;
     margin:4% auto;
-    margin-top:4em;
-    margin-bottom: 5em;
+    margin-top:6em;
+    margin-bottom: 12.5em;
     height: max-content;
 }
 
@@ -36,6 +36,7 @@
         padding: 1em;
         margin:0 auto;
         margin-top:1em;
+        margin-bottom: 6em;
     }
 
     #preface {

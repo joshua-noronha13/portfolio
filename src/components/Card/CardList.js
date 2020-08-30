@@ -18,7 +18,7 @@ export default function CardList() {
         description: 
         `Worked on making a Smartwatch using a NodeMCU, LED display, heartbeat sensor 
         and a 3D printed case for a research project on Smartwatches for Senior Citizens`,
-        tags : ['Lua','IOT','MQTT']
+        tags : ['Lua','Node','IOT','MQTT']
     }, {
         name: "Portfolio Website",
         image: "web_asset",
@@ -27,6 +27,20 @@ export default function CardList() {
         my resume and my github page. Hosting the website on Github Pages with deployment 
         via Github Actions`,
         tags : ['React', 'Bootstrap', 'Devops']
+    }, {
+        name: "Healthy Fit App",
+        image: "fitness_center",
+        color: "#9C27B0",
+        description: `Worked on making a fitness focused mobile app which classifies food based on 
+        images and suggests workout videos for a Hackathon. Hosted the backend on render.com`,
+        tags : ['React-Native', 'Pytorch', 'Docker', 'Node']
+    }, {
+        name: "DD-Free Dish Pay Per View System",
+        image: "code",
+        color: "#F4511E",
+        description: `Made a Netflix like cross-platform mobile application along with a setup box 
+        add on module with which users could pay for a TV serial and watch it on his DD Free Dish setup box.`,
+        tags : ['Ionic-V2', 'Node', 'Arduino']
     }]
     const cardContainerVariants = {
         hidden: {
