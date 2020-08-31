@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Icon(props) {
-    const iconType = props.iconType;
-    const url = props.url
-    return (
-        <span>
-            <a href={url} target="_blank" rel="noopener noreferrer">
-                <i className={`fa ${iconType}`} aria-hidden="true" style={{ padding: "10px", color: "var(--secondary)" }}/>
-            </a>
-        </span>
-    )
+  const { iconType } = props;
+  const { url } = props;
+  return (
+    <span>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <i className={`fa ${iconType}`} aria-hidden="true" style={{ padding: '10px', color: 'var(--secondary)' }} />
+      </a>
+    </span>
+  );
 }
+
+Icon.propTypes = {
+  iconType: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
