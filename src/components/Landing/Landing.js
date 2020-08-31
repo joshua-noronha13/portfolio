@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap"
 import { motion } from "framer-motion"
-import PrimaryButton from "../BasicComponents/PrimaryButton"
+// import PrimaryButton from "../BasicComponents/PrimaryButton"
 import "./landing.css"
 
 function Landing() {
