@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap"
 import { motion } from "framer-motion"
-import PrimaryButton from "../BasicComponents/PrimaryButton"
+// import PrimaryButton from "../BasicComponents/PrimaryButton"
 import "./landing.css"
 
 function Landing() {
@@ -44,7 +44,7 @@ function Landing() {
                     I'm a software engineer specializing in making enterprise level websites and backends 
                         </motion.div>
                 <motion.span variants={variant}>
-                    <PrimaryButton text="See Projects!" />
+                    {/* <PrimaryButton text="See Projects!" /> */}
                 </motion.span>
             </motion.div>
         </Container>
