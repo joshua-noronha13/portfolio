@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 // import { Overlay, OverlayText } from "./Overlay"
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 import { Col } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 const CardStyle = styled.div`
     /* position: relative; */
@@ -19,31 +20,49 @@ const CardStyle = styled.div`
     } */
   `;
 
-export function Card(props) {
+export default function Card(props) {
+  const childVariants = {
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+  const { project } = props;
+  const { tags } = project;
   return (
     <Col sm="12" md="6" lg="4" style={{ display: 'inline-block' }}>
-      <motion.span variants={props.childVariants}>
+      <motion.span variants={childVariants}>
         <CardStyle>
           <span>
             <div>
-              <span className="material-icons" style={{ fontSize: "3rem", paddingTop: "10px", color: props.project.color }}>
-                {props.project.image}
+              <span className="material-icons" style={{ fontSize: '3rem', paddingTop: '10px', color: project.color }}>
+                {project.image}
               </span>
             </div>
-            <span style={{ color: "black", marginLeft: "10px" }}>{props.project.name}</span>
-            <div style={{ fontSize: "0.9rem", margin: "10px", color: "var(--secondary)" }}>{props.project.description}</div>
-            <div style={{ margin: "10px", fontSize: "0.95rem", color: "var(--subsecondary)" }}>
-              {props.project.tags ? props.project.tags.map((tag, index) => {
-                return <span key={index}>{`${tag}\t`}</span>
-              }) : <span></span>}
+            <span style={{ color: 'black', marginLeft: '10px' }}>{project.name}</span>
+            <div style={{ fontSize: '0.9rem', margin: '10px', color: 'var(--secondary)' }}>{project.description}</div>
+            <div style={{ margin: '10px', fontSize: '0.95rem', color: 'var(--subsecondary)' }}>
+              {
+                tags ? tags.map((tag) => <span key={tag}>{`${tag}\t`}</span>) : <span />
+              }
             </div>
           </span>
-          {/* <Overlay><OverlayText>View More</OverlayText></Overlay> */}
         </CardStyle>
       </motion.span>
     </Col>
-  )
+  );
 }
 
-
-
+Card.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  }).isRequired,
+};
