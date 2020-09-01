@@ -15,16 +15,6 @@ export default function CardList() {
       },
     },
   };
-  const childVariants = {
-    hidden: {
-      opacity: 0,
-      x: -100,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-    },
-  };
   //   const scroll = window.requestAnimationFrame
   //         || function (callback) { window.setTimeout(callback, 1000 / 60); };
   //   function isElementInViewport(el) {
@@ -46,7 +36,7 @@ export default function CardList() {
     <motion.div className="container" variants={cardContainerVariants} initial="hidden" animate="visible">
       <h2 style={{ color: 'var(--secondary)' }}>A Few of my Projects</h2>
       {projects.map((project) => (
-        <Card project={project} childVariants={childVariants} key={project.name} />
+        <Card project={project} key={project.name} />
       ))}
     </motion.div>
   );

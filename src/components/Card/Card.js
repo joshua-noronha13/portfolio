@@ -21,7 +21,16 @@ const CardStyle = styled.div`
   `;
 
 export default function Card(props) {
-  const { childVariants } = props;
+  const childVariants = {
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+  };
   const { project } = props;
   const { tags } = project;
   return (
@@ -38,7 +47,7 @@ export default function Card(props) {
             <div style={{ fontSize: '0.9rem', margin: '10px', color: 'var(--secondary)' }}>{project.description}</div>
             <div style={{ margin: '10px', fontSize: '0.95rem', color: 'var(--subsecondary)' }}>
               {
-                tags ? tags.map((tag) => <span key={project.name}>{`${tag}\t`}</span>) : <span />
+                tags ? tags.map((tag) => <span key={tag}>{`${tag}\t`}</span>) : <span />
               }
             </div>
           </span>
@@ -49,12 +58,11 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  childVariants: PropTypes.string.isRequired,
   project: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    tags: PropTypes.shape([PropTypes.string.isRequired]),
+    tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   }).isRequired,
 };

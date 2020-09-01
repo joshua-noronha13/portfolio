@@ -12,7 +12,7 @@ export const projects = [{
   image: 'watch',
   color: '#039BE5',
   description:
-        `Worked on making a Smartwatch using a NodeMCU, LED display, heartbeat sensor 
+    `Worked on making a Smartwatch using a NodeMCU, LED display, heartbeat sensor 
     and a 3D printed case for a research project on Smartwatches for Senior Citizens`,
   tags: ['Lua', 'Node', 'IOT', 'MQTT'],
 }, {
