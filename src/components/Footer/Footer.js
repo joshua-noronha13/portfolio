@@ -25,6 +25,10 @@ export default function About() {
           url="https://github.com/joshuanoronha/"
           iconType="fa-github"
         />
+        <Icon
+          url="https://trialbycode.com"
+          iconType="fa-rss"
+        />
       </div>
     </div>
   );
