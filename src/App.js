@@ -14,6 +14,7 @@ import CardList from './components/Card/CardList';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Loader from './components/Loader/Loader';
+import Experience from './components/Experience/Experience';
 
 function App() {
   const loader = false;
@@ -34,6 +35,7 @@ function App() {
               <Landing />
               <SideBar />
               <CardList />
+              <Experience />
             </Route>
           </Switch>
         </Router>
