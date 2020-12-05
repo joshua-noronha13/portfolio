@@ -10,7 +10,10 @@
 @media (max-width: 1050px) {
     #sidenav {
         display : none;
-    }                
+    }        
+    #icon-container {
+        display: none;
+    }        
 }
 
 #icon-container{

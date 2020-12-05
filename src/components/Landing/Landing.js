@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import PrimaryButton from '../BasicComponents/PrimaryButton';
+import Icon from '../BasicComponents/Icon';
 import './landing.css';
 
 function Landing() {
@@ -44,7 +44,24 @@ function Landing() {
           I&apos;m a software engineer specializing in making enterprise level websites and backends
         </motion.div>
         <motion.span variants={variant}>
-          {/* <PrimaryButton text="See Projects!" /> */}
+          <div id="landing-icon-container" style={{ marginTop: '20px' }}>
+            <Icon
+              url="https://www.linkedin.com/in/joshua-noronha/"
+              iconType="fa-linkedin"
+            />
+            <Icon
+              url="mailto:joshuanoronha.portfolio@gmail.com"
+              iconType="fa-envelope-o"
+            />
+            <Icon
+              url="https://github.com/joshuanoronha/"
+              iconType="fa-github"
+            />
+            <Icon
+              url="https://trialbycode.com"
+              iconType="fa-rss"
+            />
+          </div>
         </motion.span>
       </motion.div>
     </Container>
