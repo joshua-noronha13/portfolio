@@ -5,18 +5,24 @@ export default function Toggle() {
   let dark = false;
   function toggleDarkMode() {
     dark = !dark;
-    const root = document.querySelector(':root');
+    const root = document.querySelector('body');
     if (dark) {
-      root.style.setProperty('--background', 'black');
-      root.style.setProperty('--fontColor', 'white');
+      root.style.setProperty('--primary', '#8892b0');
+      root.style.setProperty('--secondary', '#aeafaf');
+      root.style.setProperty('--subsecondary', '#3a506b');
+      root.style.setProperty('--background', '#0b132b');
+      root.style.setProperty('--fontColor', '#ffffff');
     } else {
-      root.style.setProperty('--background', 'white');
+      root.style.setProperty('--primary', '#8892b0');
+      root.style.setProperty('--secondary', '#8892b0');
+      root.style.setProperty('--subsecondary', '#8892b0');
+      root.style.setProperty('--background', '#ffffff');
       root.style.setProperty('--fontColor', '#232323');
     }
   }
   return (
     <div style={{ display: 'inline-block' }}>
-      <i className="fa fa-sun-o" style={{ display: 'inline-block' }} aria-hidden="true" />
+      <i className="fa fa-sun-o" style={{ display: 'inline-block', color: 'var(--fontColor)' }} aria-hidden="true" />
       <Form.Check
         type="switch"
         id="custom-switch"
@@ -25,7 +31,7 @@ export default function Toggle() {
         value={dark}
         onChange={toggleDarkMode}
       />
-      <i className="fa fa-moon-o" aria-hidden="true" style={{ display: 'inline' }} />
+      <i className="fa fa-moon-o" aria-hidden="true" style={{ display: 'inline', color: 'var(--fontColor)' }} />
     </div>
   );
 }

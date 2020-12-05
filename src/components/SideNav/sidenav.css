@@ -4,8 +4,10 @@
     width: 3.5em;
     height: 100vh;
     text-align: center;
+    background-color: none;
 }
-@media (max-width: 992px) {
+
+@media (max-width: 1050px) {
     #sidenav {
         display : none;
     }                
