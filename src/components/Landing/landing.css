@@ -31,7 +31,11 @@
     color: var(--secondary);
 }
 
-@media (max-width: 992px) { 
+#landing-icon-container {
+    display: none;
+}
+
+@media (max-width: 1050px) { 
     #landing-container{
         padding: 1em;
         margin:0 auto;
@@ -54,4 +58,8 @@
     #title-text {
         font-size: 1.2rem;
     }   
+
+    #landing-icon-container {
+        display: inline-block;
+    }
 }

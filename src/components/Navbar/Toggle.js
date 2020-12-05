@@ -22,7 +22,7 @@ export default function Toggle() {
   }
   return (
     <div style={{ display: 'inline-block' }}>
-      <i className="fa fa-sun-o" style={{ display: 'inline-block', color: 'var(--fontColor)' }} aria-hidden="true" />
+      <i className="fa fa-sun-o" style={{ display: 'inline-block', color: 'var(--secondary)' }} aria-hidden="true" />
       <Form.Check
         type="switch"
         id="custom-switch"
@@ -31,7 +31,7 @@ export default function Toggle() {
         value={dark}
         onChange={toggleDarkMode}
       />
-      <i className="fa fa-moon-o" aria-hidden="true" style={{ display: 'inline', color: 'var(--fontColor)' }} />
+      <i className="fa fa-moon-o" aria-hidden="true" style={{ display: 'inline', color: 'var(--secondary)' }} />
     </div>
   );
 }
