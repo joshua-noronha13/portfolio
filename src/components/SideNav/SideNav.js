@@ -15,7 +15,7 @@ export default function SideBar() {
             iconType="fa-linkedin"
           />
           <Icon
-            url="mailto:noronhajoshua@gmail.com"
+            url="mailto:joshuanoronha.portfolio@gmail.com"
             iconType="fa-envelope-o"
           />
           <Icon

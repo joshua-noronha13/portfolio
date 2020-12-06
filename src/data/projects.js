@@ -12,7 +12,7 @@ export const projects = [{
   image: "watch",
   color: "#039BE5",
   description:
-    `Worked on making a Smartwatch using a NodeMCU, LED display, heartbeat sensor 
+    `Created a Smartwatch prototype using a NodeMCU, LED display, heartbeat sensor 
     and a 3D printed case for a research project on Smartwatches for Senior Citizens`,
   tags: ['Lua', 'Node', 'IOT', 'MQTT'],
   codeLink: 'https://github.com/joshuanoronha/smartwatch'
@@ -20,8 +20,8 @@ export const projects = [{
   name: "IMDB Clone",
   image: "theaters",
   color: "#F4511E",
-  description: `Made an IMDB like web application along with the backend and the web application 
-  hosted in Heroku. The application has features of searching, sorting, filtering and login`,
+  description: `Made an IMDB like web application along and hosted tthe application
+  in Heroku. The application has features of searching, sorting, filtering and login`,
   tags: ['Node.js', 'Angular', 'MongoDB', 'Express'],
   codeLink: 'https://github.com/joshuanoronha/IMDB-Clone-Frontend',
   projectLink: 'http://arcane-bastion-14913.herokuapp.com/movies'
@@ -39,7 +39,7 @@ export const projects = [{
   name: "Healthy Fit App",
   image: "fitness_center",
   color: "#9C27B0",
-  description: `Worked on making a fitness focused mobile app which classifies food based on 
+  description: `Created a fitness focused mobile app during a hackathon which classifies food based on 
     images and suggests workout videos for a Hackathon. Hosted the backend on render.com`,
   tags: ['React-Native', 'Pytorch', 'Docker', 'Node'],
   codeLink: 'https://github.com/joshuanoronha/foodsy',
