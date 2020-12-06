@@ -35,7 +35,9 @@ export default function Experience() {
         <span style={{ color: 'var(--secondary)', marginTop: '1.1em' }}>
           <div>
             <span style={{ color: 'var(--fontColor)', fontSize: '1.2rem' }}>IT Intern</span>
-            <span style={{ float: 'right', color: 'var(--subsecondary)', fontSize: '0.9rem' }}>(July 2019 - Present)</span>
+            <span style={{ float: 'right', color: 'var(--subsecondary)', fontSize: '0.9rem' }}>
+              (December 2017 – February 2018)
+            </span>
           </div>
           <div>Jet Airways</div>
           <div style={{ marginTop: '1.5em', fontSize: '0.9rem' }}>
