@@ -43,13 +43,9 @@ export default function Experience() {
           <div style={{ marginTop: '1.5em', fontSize: '0.9rem' }}>
             <ul>
               <li>
-                Currently developing a Serverless Backend for an overseas client in Node.js,&nbsp;
-                hosted in Azure Functions and designed the database in Azure SQL.
-              </li>
-              <li>
-                Developed pipelines in Azure Devops for events like&nbsp;
-                push on a particular branch.&nbsp;
-                Also used Logic Apps to trigger functions on events like CSV upload.
+                Worked on making a Web Application in Serenity along with a Backend in Node.js&nbsp;
+                that fetches records from MySQL and OracleDB using filters and sends&nbsp;
+                customized emails as well as SMS to them.
               </li>
             </ul>
           </div>
